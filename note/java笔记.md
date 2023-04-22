@@ -566,7 +566,7 @@ else if (判断条件n) {
 }
 ```
 
-### **switch语句**
+### switch语句
 
 格式如下：
 
@@ -701,7 +701,7 @@ for(初始化表达式; 循环条件; 操作表达式) {
 
 跳转语句用于实现循环执行过程中程序流程的跳转，在Java中的跳转语句有break语句和continue语句。接下来分别进行详细地讲解。
 
-### **break语句**
+### break语句
 
 在switch条件语句和循环语句中都可以使用break语句。当它出现在switch条件语句中时，作用是终止某个case并跳出switch结构。当它出现在循环语句中，作用是跳出循环语句，执行后面的代码。
 
@@ -726,7 +726,7 @@ public class BreakDemo {
 在上述带代码中，通过while循环打印x的值，当x的值为3时使用break语句跳出循环。因此打印结果中并没有出现“x=4”。
 ```
 
-### **标记**
+### 标记
 
 当break语句出现在嵌套循环中的内层循环时，它只能跳出内层循环，如果想使用break语句跳出外层循环则需要对外层循环添加标记。接下来将ForForDemo.java稍作修改，控制程序只打印4行“*”，如下所示。BreakDemo02.java
 
@@ -751,7 +751,7 @@ public class BreakDemo02 {
 
 BreakDemo02.java与ForForDemo.java实现原理类似，只是在外层for循环前面增加了标记“AA”。当i>4时，使用break AA;语句跳出外层循环。因此程序只打印了4行“*”。
 
-### **continue语句**
+### continue语句
 
 continue语句用在循环语句中，它的作用是终止本次循环，执行下一次循环。接下来通过一个练习对1~100之内的奇数求和，ContinueDemo.java
 
@@ -1278,6 +1278,7 @@ class PersonDemo {
 
 + **默认公有的**
 
+访问权限表\n位置\tprivate \t默认        \tprotected        \tpublic        \n同一个类\t可以\t可以\t可以\t可以\n同一个包的类\t不可以\t可以\t可以\t可以\n不同包的子类\t不可以\t不可以\t可以\t可以\n不同包的不是子类\t不可以        \t不可以\t不可以\t可
 ```c++
 class Person {
     // 类属性(这里是私有的)
